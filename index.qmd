@@ -1,0 +1,16 @@
+---
+title: "Class Exercise"
+format:
+  html:
+    self-contained: true
+editor: source
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+ggplot(data = storms) +
+  geom_point(mapping = aes(color = "green", x=pressure, y=wind),alpha = 0.2)
+```
